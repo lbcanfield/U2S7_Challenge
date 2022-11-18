@@ -1,3 +1,8 @@
+html {
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,120 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav-container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(240, 208, 166);
+}
+
+.nav-container h1 {
+  margin-left: 10px;
+  font-size: 2rem;
+}
+
+.navBtns {
+  margin-right: 10px;
+}
+
+button {
+  height: 30px;
+  width: 100px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home-image {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../Assets/Pizza.jpg');
+}
+
+.home-image h2 {
+  margin-bottom: 20px;
+}
+
+.order-form-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  justify-content: center;
+}
+
+.order-form-container .form-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(240, 208, 166);
+  height: 50px;
+}
+
+.form-header h4 {
+  display: flex;
+  margin-left: 10px;
+}
+
+.form-input {
+  display: flex;
+}
+
+.form-input.personal-text-group {
+  flex-direction: column;
+
+}
+
+.text-group,
+.dropdown-group {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.text-group label,
+.dropdown-group label {
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 20%;
+}
+
+.text-group input,
+.dropdown-group select {
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 80%;
+}
+
+option {
+  text-align: center;
+}
+
+.sauce-radio-group,
+.toppings-checkbox-group {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 10px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
